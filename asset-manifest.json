@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/pftr/static/css/main.a9330973.css",
+    "main.js": "/pftr/static/js/main.091441c9.js",
+    "static/media/project-4.png": "/pftr/static/media/project-4.5a086ef73a52e701e656.png",
+    "static/media/contact.png": "/pftr/static/media/contact.d0cca3952f81fdb3deb6.png",
+    "static/media/project-5.png": "/pftr/static/media/project-5.2de181923f2d20df1842.png",
+    "static/media/project-1.png": "/pftr/static/media/project-1.df6104a858eb956900f7.png",
+    "static/media/profile.png": "/pftr/static/media/profile.bf9c0e7c727c5751a698.png",
+    "static/media/project-2.png": "/pftr/static/media/project-2.103db35a3af7d47eaa4e.png",
+    "static/media/project-3.png": "/pftr/static/media/project-3.24faf02663e1a653d6f9.png",
+    "static/media/brush.png": "/pftr/static/media/brush.85c9bab5ba2d7dcae1e3.png",
+    "index.html": "/pftr/index.html",
+    "main.a9330973.css.map": "/pftr/static/css/main.a9330973.css.map",
+    "main.091441c9.js.map": "/pftr/static/js/main.091441c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a9330973.css",
+    "static/js/main.091441c9.js"
+  ]
+}
