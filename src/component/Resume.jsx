@@ -25,14 +25,14 @@ const Resume = () => {
          }}
     >
       <div className="">
-        <p className='font-poppins font-semibold text-4xl'>
+        <p className='font-poppins font-semibold text-4xl dark:text-black'>
           MY <span className='text-[#B84C73]'>SKILLS</span>
         </p>
         <div className="flex justify-center mt-5">
           <LineGradient width='w-1/3'/>
         </div>
       </div>
-      <p className='mt-10 mb-7 w-full text-xl font-light'>I am a frontend web developer. I can provide clean code and pixel perfect design.</p>
+      <p className='mt-10 mb-7 w-full text-xl font-light dark:text-black'>I am a frontend web developer. I can provide clean code and pixel perfect design.</p>
        
     </motion.div>  
     
@@ -55,9 +55,9 @@ const Resume = () => {
           onClick={()=>setFtool(!ftool)}
         >
           <RiBracesLine className='text-[#777AD4] text-4xl'/>
-          <div className="text-left">
+          <div className="text-left dark:text-black">
               <p className='font-poppins text-xl'>Frontend Developer</p>
-              <span className='text-sm text-[#C1C0C0]'>More then 3 years</span>
+              <span className='text-sm text-[#C1C0C0] dark:text-black'>More then 3 years</span>
           </div>
           <RiArrowDownSLine className='text-3xl text-[#777AD4] hover:rotate-45 transition duration-100'/>
         </div>
@@ -68,7 +68,7 @@ const Resume = () => {
           {/* skill item */}
          <div className="mb-4">
           {/* skills-title */}
-          <div className="flex justify-between mb-2">
+          <div className="flex justify-between mb-2 dark:text-black">
             <h1>HTML</h1>
             <p className='text-gray-400'>95%</p>
           </div>
@@ -81,7 +81,7 @@ const Resume = () => {
           {/* skill item */}
           <div className="mb-4">
           {/* skills-title */}
-          <div className="flex justify-between mb-2">
+          <div className="flex justify-between mb-2 dark:text-black">
             <h1>CSS</h1>
             <p className='text-gray-400'>80%</p>
           </div>
@@ -93,7 +93,7 @@ const Resume = () => {
 
          <div className="mb-4">
           {/* skills-title */}
-          <div className="flex justify-between mb-2">
+          <div className="flex justify-between mb-2 dark:text-black">
             <h1>Javascript</h1>
             <p className='text-gray-400'>75%</p>
           </div>
@@ -105,7 +105,7 @@ const Resume = () => {
 
          <div className="mb-4">
           {/* skills-title */}
-          <div className="flex justify-between mb-2">
+          <div className="flex justify-between mb-2 dark:text-black">
             <h1>React</h1>
             <p className='text-gray-400'>80%</p>
           </div>
@@ -114,6 +114,20 @@ const Resume = () => {
             <span className='h-2 rounded-md block bg-[#777AD4] w-10/12'></span>
           </div>
          </div>
+
+         <div className="mb-4">
+          {/* skills-title */}
+          <div className="flex justify-between mb-2 dark:text-black">
+            <h1>Next.js</h1>
+            <p className='text-gray-400'>80%</p>
+          </div>
+          {/* skills-bar */}
+          <div className="h-2 rounded-md bg-[#0C3360]">
+            <span className='h-2 rounded-md block bg-[#777AD4] w-10/12'></span>
+          </div>
+         </div>
+
+         
         </div>
         }
       </div>    
@@ -123,10 +137,10 @@ const Resume = () => {
           className="flex items-center justify-between gap-3 px-4 py-3 border-2 border-[#5E53A6] hover:shadow-[#8c12f0] hover:shadow-md transition duration-500 mb-6"
           onClick={()=>setBtool(!btool)}
         >
-         <RiDatabase2Line className='text-[#777AD4] text-4xl'/>
-         <div className="text-left">
+         <RiDatabase2Line className='text-[#777AD4] text-4xl '/>
+         <div className="text-left dark:text-black">
             <p className='font-poppins text-xl'>Backend Developer</p>
-            <span className='text-sm text-[#C1C0C0]'>More then 3 years</span>
+            <span className='text-sm text-[#C1C0C0] dark:text-black'>More then 3 years</span>
          </div>
          <RiArrowDownSLine className='text-2xl text-[#777AD4]'/>
         </div>  
@@ -137,34 +151,9 @@ const Resume = () => {
           {/* skill item */}
          <div className="mb-4">
           {/* skills-title */}
-          <div className="flex justify-between mb-2">
-            <h1>HTML</h1>
-            <p className='text-gray-400'>95%</p>
-          </div>
-          {/* skills-bar */}
-          <div className="h-2 rounded-md bg-[#0C3360]">
-            <span className='h-2 rounded-md block bg-[#777AD4] w-11/12'></span>
-          </div>
-         </div>
-
-          {/* skill item */}
-          <div className="mb-4">
-          {/* skills-title */}
-          <div className="flex justify-between mb-2">
-            <h1>CSS</h1>
-            <p className='text-gray-400'>80%</p>
-          </div>
-          {/* skills-bar */}
-          <div className="h-2 rounded-md bg-[#0C3360]">
-            <span className='h-2 rounded-md block bg-[#777AD4] w-10/12'></span>
-          </div>
-         </div>
-
-         <div className="mb-4">
-          {/* skills-title */}
-          <div className="flex justify-between mb-2">
-            <h1>Javascript</h1>
-            <p className='text-gray-400'>75%</p>
+          <div className="flex justify-between mb-2 dark:text-black">
+            <h1>PHP</h1>
+            <p className='text-gray-400'>70%</p>
           </div>
           {/* skills-bar */}
           <div className="h-2 rounded-md bg-[#0C3360]">
@@ -172,15 +161,40 @@ const Resume = () => {
           </div>
          </div>
 
-         <div className="mb-4">
+          {/* skill item */}
+          <div className="mb-4">
           {/* skills-title */}
-          <div className="flex justify-between mb-2">
-            <h1>React</h1>
+          <div className="flex justify-between mb-2 dark:text-black">
+            <h1>Node JS</h1>
             <p className='text-gray-400'>80%</p>
           </div>
           {/* skills-bar */}
           <div className="h-2 rounded-md bg-[#0C3360]">
             <span className='h-2 rounded-md block bg-[#777AD4] w-10/12'></span>
+          </div>
+         </div>
+
+         <div className="mb-4">
+          {/* skills-title */}
+          <div className="flex justify-between mb-2 dark:text-black">
+            <h1>C#</h1>
+            <p className='text-gray-400'>75%</p>
+          </div>
+          {/* skills-bar */}
+          <div className="h-2 rounded-md bg-[#0C3360]">
+            <span className='h-2 rounded-md block bg-[#777AD4] w-9/12'></span>
+          </div>
+         </div>
+
+         <div className="mb-4">
+          {/* skills-title */}
+          <div className="flex justify-between mb-2 dark:text-black">
+            <h1>Python</h1>
+            <p className='text-gray-400'>50%</p>
+          </div>
+          {/* skills-bar */}
+          <div className="h-2 rounded-md bg-[#0C3360]">
+            <span className='h-2 rounded-md block bg-[#777AD4] w-6/12'></span>
           </div>
          </div>
         </div>

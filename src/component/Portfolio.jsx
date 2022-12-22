@@ -23,7 +23,7 @@ const Project = ({title}) => {
         <div className="absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 
           bg-gray-600 z-30  flex flex-col justify-center items-center text-center p-16 text-white">
           <p className='text-2xl font-playfair'>{title}</p>
-          <p className="mt-7">
+          <p className="mt-7  dark:text-black">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eaque voluptates minima.
           </p>
         </div>
@@ -47,14 +47,14 @@ const Portfolio = () => {
           }}
       >
         <div className="">
-          <p className='font-poppins font-semibold text-4xl'>
+          <p className='font-poppins font-semibold text-4xl  dark:text-black'>
             PORT<span className='text-[#B84C73]'>FOLIO</span>
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width='w-1/3'/>
           </div>
         </div>
-        <p className='mt-10 mb-10 w-full text-xl font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorum?</p>    
+        <p className='mt-10 mb-10 w-full text-xl font-light dark:text-black'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, dolorum?</p>    
       </motion.div>  
 
       <div className="flex justify-center">

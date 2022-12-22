@@ -4,7 +4,7 @@ import useMediaQuery from '../hooks/useMediaQuery'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { motion } from 'framer-motion'
 import { useForm } from "react-hook-form";
-import contactImg from '../assets/contact.png'
+import contactImg from '../assets/contactImg.png'
 
 const Contact = () => {
   const { register,trigger, formState: { errors } } = useForm();
@@ -29,8 +29,8 @@ const Contact = () => {
          }}
     >
       <div className="">
-        <p className='font-poppins font-semibold text-4xl mb-5 text-[#B84C73]'>
-          CONTACT <span className='text-white'>ME</span>
+        <p className='font-poppins font-semibold text-4xl mb-5 text-[#B84C73] '>
+          CONTACT <span className='text-white  dark:text-black'>ME</span>
         </p>
         <div className="flex md:justify-end my-5">
           <LineGradient width='w-2/4 mx-auto'/>
@@ -38,7 +38,7 @@ const Contact = () => {
       </div>       
     </motion.div>  
     
-    <div className="md:flex md:justify-between gap-16 mt-8">
+    <div className="md:flex md:justify-between gap-16 mt-8 ">
     <motion.div
         className='basis-1/2 flex justify-center'
          initial="hidden"
@@ -70,7 +70,7 @@ const Contact = () => {
       method="POST"
       action="https://formsubmit.co/amineasfar101@gmail.com">
         <input 
-          className='w-full bg-[#7FB0EA] font-semibold placeholder-black p-3' 
+          className='w-full text-blue-900 border-[#5E53A6]  dark:bg-black dark:text-white dark:placeholder-white hover:shadow-[#6383b1] hover:shadow-md transition duration-500 font-semibold rounded-md  placeholder-blue-900  p-3' 
           type="text" 
           placeholder='NAME' 
           id="" {...register("name",{required:true ,maxLength:100,})}
@@ -82,7 +82,7 @@ const Contact = () => {
           </span>
         )}
         <input 
-          className='w-full bg-[#7FB0EA] font-semibold placeholder-black p-3 mt-5' 
+          className='w-full text-blue-900 border-[#5E53A6] dark:bg-black dark:text-white dark:placeholder-white hover:shadow-[#6383b1] hover:shadow-md transition duration-500 font-semibold placeholder-blue-900 rounded-md  p-3 mt-5' 
           type="text" 
           placeholder='EMAIL' 
           id="" {...register("email",{required:true ,pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,})}
@@ -95,12 +95,12 @@ const Contact = () => {
       )}
       
         <textarea 
-          className='w-full bg-[#7FB0EA] font-semibold placeholder-black p-3 mt-5' 
+          className='w-full dark:bg-black dark:text-white dark:placeholder-white text-blue-900 border-[#5E53A6] hover:shadow-[#6383b1] hover:shadow-md transition duration-500 font-semibold rounded-md  placeholder-blue-900 p-3 mt-5' 
           type="text" 
           placeholder='MESSAGE' 
           rows="4"
           cols="50"
-          id="" {...register("email",{required:true ,maxLength:2000,})}
+          id="" {...register("message",{required:true ,maxLength:2000,})}
         />
       {errors.message && (
           <span className='text-red-400 mt-1'>
@@ -108,8 +108,7 @@ const Contact = () => {
             {errors.message.type === 'maxlength' && 'Max Length is 2000 char.'}
           </span>
       )}
-      <button className='bg-yellow-600 cursor-pointer text-slate-900 rounded-sm py-3 px-7 font-semibold 
-        hover:text-white transition duration-500 mt-5'>
+      <button className= 'mt-5 bg-gradient-rainblue cursor-pointer rounded-md dark:text-white dark:hover:text-black text-slate-900 py-3 px-7 font-semibold hover:bg-orange-600 hover:text-white transition duration-500'>
        SEND ME A MESSAGE
       </button>
       </form>

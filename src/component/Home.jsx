@@ -31,16 +31,16 @@ const Home = ({setSelectedPage}) => {
               visible : {opacity :1 , x : 0}, 
             }}
           >
-            <h3 class="text-3xl  text-[#FFA31F]">Hello,</h3>
-            <p className='text-6xl mt-4 font-poppins z-10 text-center md:text-start  '>
+            <h3 class="text-3xl  text-[#FFA31F] ">Hello,</h3>
+            <p className='text-6xl mt-4 font-poppins z-10 text-center md:text-start dark:text-black '>
               I'm {""}
               <span
-                className="xs:relative xs:text-slate-900 xs:font-semibold z-20 xs:before:content-brush
+                className="xs:relative xs:text-slate-900 dark:text-white xs:font-semibold z-20 xs:before:content-brush
                   before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
               >Amine
               </span>
             </p>
-            <p className="mt-10 mb-7 text-md text-center md:text-start">I'm a Web Developer, I love to create beautiful and functional websites. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p className="mt-10 mb-7 text-md text-center dark:text-black md:text-start">I'm a Web Developer, I love to create beautiful and functional websites. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
            
           </motion.div>
 
@@ -56,7 +56,7 @@ const Home = ({setSelectedPage}) => {
           >
             <AnchorLink 
              className='bg-gradient-rainblue cursor-pointer text-slate-900 rounded-sm py-3 px-7 font-semibold 
-             hover:bg-orange-600 hover:text-white transition duration-500'
+             hover:bg-orange-600 hover:text-white dark:text-white dark:hover:text-black transition duration-500'
              onClick={()=>setSelectedPage("contact")}
              >
               Contact Me
@@ -65,7 +65,7 @@ const Home = ({setSelectedPage}) => {
              className='bg-gradient-rainblue cursor-pointer py-0.5 pr-0.5 rounded-r-sm'
              onClick={()=>setSelectedPage("contact")}
              >
-              <div className="bg-bgBody font-poppins px-10 hover:text-blue-400 transition duration-500 w-full h-full flex items-center justify-center">
+              <div className="bg-bgBody dark:bg-white dark:text-black font-poppins px-10 hover:text-blue-400 transition duration-500 w-full h-full flex items-center justify-center">
                 Let's talk
               </div>
             </AnchorLink>

@@ -21,7 +21,7 @@ const Navbar = ({isTopofPage,selectedPage,setSelectedPage}) => {
   const isAboveSmallSecreens = useMediaQuery("(min-width:768px)")
   const navbarBg = isTopofPage ? "" : "bg-darkBody";
   return (
-    <nav className={`${navbarBg} w-full py-6 fixed z-40 top-0`}>
+    <nav className={`${navbarBg} w-full py-6 fixed z-40 top-0 dark:bg-darkBody`}>
       <div className="flex justify-between items-center mx-auto w-5/6">
         <h1 className='font-montserrat text-3xl font-medium logo'>Amine</h1>
         

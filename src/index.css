@@ -89,7 +89,6 @@ body,
     position: relative;
     text-transform: uppercase;
     font-size: 1.2rem;
-    color: #dbe1e8;
     letter-spacing: 2px
 }
 .right-about .about-item .abt-text .small-text::before {
@@ -100,4 +99,14 @@ body,
     width: 2rem;
     height: 2px;
     background-color: #a0aab3;
+  }
+  @media (max-width:750px) {
+    .right-about {
+        margin-top: 10px;
+    }
+  }
+  @media (max-width:560px) {
+  .right-about {
+    display: none;
+    }
   }
