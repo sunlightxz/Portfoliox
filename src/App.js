@@ -10,7 +10,7 @@ import useMediaQuery from "./hooks/useMediaQuery";
 import LineGradient from './containt/LineGradient'
 import Footer from "./component/Footer";
 import { BsMoonStarsFill } from "react-icons/bs";
-im
+imp
 function App() {
   const [selectedPage,setSelectedPage]=useState('home')
   const isAboveMediumSecreens = useMediaQuery("(min-width:1060px)")
